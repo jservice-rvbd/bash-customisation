@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Pretend I've done some useful scripting here.
+
 get-colors() {
   local num="$(tput colors 2>/dev/null)"
   if [ $? -eq 0 ]; then
