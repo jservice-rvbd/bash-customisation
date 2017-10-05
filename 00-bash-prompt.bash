@@ -54,3 +54,5 @@ PROMPT_GIT_PROGRESS_COLOR=$violet
 PROMPT_SYMBOL_COLOR=$default
 
 source "$(dirname "${BASH_SOURCE[0]}")/sexy-bash-prompt/prompt.bash"
+
+PS1="[${PS1/\\n/] }"
