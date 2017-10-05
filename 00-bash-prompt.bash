@@ -55,4 +55,5 @@ PROMPT_SYMBOL_COLOR=$default
 
 source "$(dirname "${BASH_SOURCE[0]}")/sexy-bash-prompt/prompt.bash"
 
-PS1="[${PS1/\\n/] }" # Remove newline and add brackets.
+PS1="${PS1/\\w/\\W}" # replace full pwd with short pwd
+PS1="[${PS1/\\n/] }" # remove newline and add brackets.
