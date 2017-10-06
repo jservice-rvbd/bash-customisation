@@ -11,7 +11,7 @@ gows() {
     # If we can unambiguously determine a go import for the project
     # then change directory to it.  Otherwise change directory to src
     # so that we can tell from PS1 whether or not we found the repo
-    local matched_repos=( $(find . -depth 4 -name $1) )
+    local matched_repos=( $(find . -mindepth 3 -maxdepth 4 -name $1) )
     if [ "${#matched_repos[@]}" == 1 ]; then
         cd "${matched_repos[0]}"
     else
